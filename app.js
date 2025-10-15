@@ -236,18 +236,18 @@ const games = [
     releaseDate: "2018-01-25",
     recommended: true,
     image:
-      "https://www.gtabase.com/images/gta-san-andreas/gta-san-andreas-banner.jpg",
+      "https://lh3.googleusercontent.com/proxy/6Lu96C0LJo5XpNug2AvzhqJsBQexHexgj3pPzMRpDR3fmBzGZhs-vM5c7CrmxF4Av-Hg_4QsC4dRnMbgNu2QwxCGZJyXA2b18V9Web05rvrndk0uG6i9FyyW9SSd7x3jiyRkRi9ULxsxR2jx4BfXuToUeCvb8crfI5JCf4-JOBcc0pw_nOKBdZhmFDRH_wiyyZs",
     thumbnails: [
-      "https://www.gtabase.com/images/gta-san-andreas/gta-san-andreas-banner.jpg",
+      "https://lh3.googleusercontent.com/proxy/6Lu96C0LJo5XpNug2AvzhqJsBQexHexgj3pPzMRpDR3fmBzGZhs-vM5c7CrmxF4Av-Hg_4QsC4dRnMbgNu2QwxCGZJyXA2b18V9Web05rvrndk0uG6i9FyyW9SSd7x3jiyRkRi9ULxsxR2jx4BfXuToUeCvb8crfI5JCf4-JOBcc0pw_nOKBdZhmFDRH_wiyyZs",
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQl3345BJYY2-5R2h4Q_bm3ZpUNfbdWVmSpQ&s",
       "https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Gta-sa-screen1.jpg/330px-Gta-sa-screen1.jpg",
       "https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2024/10/grand-theft-auto-san-andreas-anniversary-1.jpg?w=1600&h=900&fit=crop",
     ],
     screenshots: [
-      "https://www.gtabase.com/images/gta-san-andreas/gta-san-andreas-banner.jpg",
-      "https://www.gtabase.com/images/gta-san-andreas/gta-san-andreas-banner.jpg",
-      "https://www.gtabase.com/images/gta-san-andreas/gta-san-andreas-banner.jpg",
-      "https://www.gtabase.com/images/gta-san-andreas/gta-san-andreas-banner.jpg",
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2024/10/grand-theft-auto-san-andreas-anniversary-1.jpg?w=1600&h=900&fit=crop",
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2024/10/grand-theft-auto-san-andreas-anniversary-1.jpg?w=1600&h=900&fit=crop",
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2024/10/grand-theft-auto-san-andreas-anniversary-1.jpg?w=1600&h=900&fit=crop",
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/wm/2024/10/grand-theft-auto-san-andreas-anniversary-1.jpg?w=1600&h=900&fit=crop",
     ],
     reviews: [
       {
