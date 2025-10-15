@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>GameZone</title>
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="nav-brand">GameZone</div>
+      <ul class="nav-links">
+        <li><a href="" data-page="home">Home</a></li>
+        <li><a href="" data-page="games">Games</a></li>
+        <li><a href="" data-page="about">About</a></li>
+        <li>
+          <a href="" data-page="wishlist"
+            >Wishlist <span class="badge" id="wishlistBadge">0</span></a
+          >
+        </li>
+        <li>
+          <a href="" data-page="cart"
+            >Cart <span class="badge" id="cartBadge">0</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div id="home" class="page active">
+      <section class="hero">
+        <div class="hero-slider">
+          <div class="slider-container" id="heroSlider"></div>
+          <button class="slider-btn prev" id="prevBtn">&lt</button>
+          <button class="slider-btn next" id="nextBtn">&gt</button>
+        </div>
+      </section>
+
+      <section class="recommneded-section">
+        <h2>Recommneded Games</h2>
+        <div class="games-container" id="recommnededGames"></div>
+      </section>
+
+      <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="newsletterForm">
+          <input
+            type="email"
+            id="newletterEmail"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit">Subscribe</button>
+          <p class="error-message" id="newletterError"></p>
+        </form>
+      </section>
+    </div>
+
+    <!-- Games page -->
+    <div class="page" id="games">
+      <div class="games-header">
+        <h1>Browse Games</h1>
+        <div class="controls">
+          <input type="text" id="searchBar" placeholder="Search games...." />
+
+          <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="Sports">Sports</option>
+            <option value="Action">Action</option>
+            <option value="RPG">RPG</option>
+            <option value="Roguelike / Action">Roguelike /Action</option>
+            <option value="Platformer / Indie">Platformer / Indie</option>
+            <option value="Action / Adventurer">Action / Adventurer</option>
+            <option value="Action RPG">Action RPG</option>
+          </select>
+
+          <select id="platformFilter">
+            <option value="">All Platforms</option>
+            <option value="PC">PC</option>
+            <option value="PlayStation">PlayStation</option>
+            <option value="Console">Console</option>
+          </select>
+
+          <input type="number" id="minPrice" placeholder="Min Price" min="0" />
+          <input type="number" id="maxPrice" placeholder="Max Price" min="0" />
+
+          <select id="sortBy">
+            <option value="">Sort By</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating-desc">Rating: High to Low</option>
+            <option value="name-asc">Name: A-Z</option>
+          </select>
+
+          <button id="applyFilters">Apply Filters</button>
+
+          <div class="view-toggle">
+            <button id="gridView">Grid</button>
+            <button id="ListView">List</button>
+          </div>
+        </div>
+      </div>
+      <div class="games-container grid-view" id="allGamesContainer"></div>
+    </div>
+
+    <!-- Game Detail Page -->
+    <div id="gameDetail" class="page">
+      <div class="detail-container" id="detailContainer"></div>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+      <div class="about-container">
+        <h1>About GameZone</h1>
+        <p>
+          Welcome to GameZone, your premier destination for digital gaming
+          entertainment. We offer a curated selection of the best games across
+          all platforms.
+        </p>
+
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <input
+            type="text"
+            id="contactName"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="contactEmail"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            id="contactMessage"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+          <p class="error-message" id="contactError"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Cart Page -->
+    <div id="cart" class="page">
+      <div class="cart-container">
+        <h1>Shopping Cart</h1>
+        <div id="cartItems"></div>
+        <div class="cart-summary" id="cartSummary"></div>
+      </div>
+    </div>
+
+    <!-- Wishlist Page -->
+    <div id="wishlist" class="page">
+      <div class="wishlist-container">
+        <h1>My Wishlist</h1>
+        <div id="wishlistItems"></div>
+      </div>
+    </div>
+
+    <!-- Checkout Page -->
+    <div id="checkout" class="page">
+      <div class="checkout-container">
+        <h1>Checkout</h1>
+        <form id="checkoutForm">
+          <h2>Payment Information</h2>
+          <input
+            type="text"
+            id="cardName"
+            placeholder="Name on Card"
+            required
+          />
+          <input
+            type="text"
+            id="cardNumber"
+            placeholder="Card Number (16 digits)"
+            maxlength="16"
+            required
+          />
+          <input
+            type="text"
+            id="expiryDate"
+            placeholder="Expiry Date (MM/YY)"
+            maxlength="5"
+            required
+          />
+          <input
+            type="text"
+            id="cvv"
+            placeholder="CVV (3-4 digits)"
+            maxlength="4"
+            required
+          />
+
+          <h2>Contact Information</h2>
+          <input type="email" id="checkoutEmail" placeholder="Email" required />
+
+          <button type="submit">Complete Purchase</button>
+          <p class="error-message" id="checkoutError"></p>
+        </form>
+        <div id="loadingSpinner" class="spinner hidden"></div>
+      </div>
+    </div>
+
+    <!-- Receipt Page -->
+    <div id="receipt" class="page">
+      <div class="receipt-container" id="receiptContainer"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
